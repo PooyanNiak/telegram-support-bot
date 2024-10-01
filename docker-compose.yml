@@ -4,6 +4,6 @@ services:
     build: .
     restart: unless-stopped
     volumes:
-      - ./config:/bot/config
+      - ${PWD}/config:/bot/config
     ports:
       - "8080:8080"
